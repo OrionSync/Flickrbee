@@ -1,0 +1,23 @@
+appName: Flickrbee
+logLevel: INFO
+
+FLICKR:
+    Id: '4e5a73d03240d938a11461235916ee48'
+    Secret: 'd0609a3e06ca1a06'
+
+postcode:
+    default: 0000
+
+download:
+    filtered: True
+    grayscale: True
+
+image:
+    prefix: 'bee'
+
+TENSOR:
+    Model: 'model/'
+    Labels: 'model/my-model/saved_model/label_map.pbtxt'
+    ImageDir: 'exports/original-images'
+    ImgaeDirFiltered: 'exports/filtered-images'
+    Threshold: 0.30
